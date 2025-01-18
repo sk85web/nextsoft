@@ -40,7 +40,7 @@ const Header = () => {
         id="mobile-menu"
         className={`pt-2 ${
           isMenuOpen ? 'flex' : 'hidden'
-        } lg:hidden w-full h-full absolute top-14 bg-white justify-center`}
+        } lg:hidden w-full absolute top-14 bg-white justify-center`}
       >
         <div className="flex flex-col gap-7">
           <nav className="flex flex-col gap-[6px] my-auto items-center relative after:content-[''] after:block after:w-[260px] after:h-[1px] after:bg-text after:absolute after:-bottom-[12px] after:rounded">

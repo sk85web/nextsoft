@@ -1,12 +1,18 @@
 import type { Metadata } from 'next';
-import { Bebas_Neue, Inter } from 'next/font/google';
+import { Bebas_Neue, Inter, Oswald } from 'next/font/google';
 import './globals.css';
 
 import Header from '@/components/Header';
 
 const bebasNeue = Bebas_Neue({
   variable: '--font-bebas-neue',
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
+  weight: ['400'],
+});
+
+const oswald = Oswald({
+  variable: '--font-oswald',
+  subsets: ['cyrillic'],
   weight: ['400'],
 });
 
@@ -28,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bebasNeue.variable} ${inter.variable} antialiased`}>
+      <body
+        className={`${bebasNeue.variable} ${inter.variable} ${oswald.variable} antialiased`}
+      >
         <Header />
         {children}
       </body>

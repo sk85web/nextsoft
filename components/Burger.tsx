@@ -4,7 +4,7 @@ type BurgerProps = {
 
 const Burger = ({ onClick }: BurgerProps) => {
   return (
-    <div className="flex lg:hidden absolute right-5 top-1/2 transform -translate-y-1/2">
+    <div className="flex lg:hidden absolute right-7 top-1/2 transform -translate-y-1/2">
       <button
         onClick={onClick}
         className="relative bg-transparent w-[23px] h-[17px]"

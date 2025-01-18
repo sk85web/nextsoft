@@ -18,9 +18,9 @@ const Nav = () => {
             pathName === link.path ? 'accent' : 'text'
           } hover:text-accent transition-all duration-200 text-[24px] cursor-${
             pathName === link.path ? 'text' : 'pointer'
-          }`}
+          } ${link.name === 'contacts' && 'hidden'}`}
         >
-          {link.name !== 'contacts' && link.name}
+          {link.name}
         </Link>
       ))}
     </>
