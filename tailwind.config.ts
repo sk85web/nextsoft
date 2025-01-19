@@ -33,6 +33,9 @@ export default {
         'custom-gradient':
           'radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.75) 75%, rgba(255, 255, 255, 0) 100%)',
         'product-gradient': 'linear-gradient(320deg, #FFFFFF, #FFEAAF)',
+        'interface-gradient': 'linear-gradient(90deg, #2A2A2A, #737373)',
+        'interface-gradient-reverse':
+          'linear-gradient(270deg, #2A2A2A, #737373)',
       },
       opacity: {
         '50': '0.5',
